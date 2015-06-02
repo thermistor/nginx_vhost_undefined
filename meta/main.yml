@@ -75,17 +75,17 @@ galaxy_info:
   #  - 9.1
   #  - 9.2
   - name: Ubuntu
-   versions:
+    versions:
   #  - all
   #  - lucid
   #  - maverick
   #  - natty
   #  - oneiric
-   - precise
+  #  - precise
   #  - quantal
   #  - raring
   #  - saucy
-  #  - trusty
+    - trusty
   #  - utopic
   #  - vivid
   #- name: SLES
@@ -101,8 +101,8 @@ galaxy_info:
   #  versions:
   #  - all
   #  - any
-  # - name: Debian
-   # versions:
+  #- name: Debian
+  #  versions:
   #  - all
   #  - etch
   #  - jessie
