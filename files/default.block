@@ -1,0 +1,5 @@
+# Silently block all undefined vhost access
+server {
+  server_name _;
+  return 444;
+}
