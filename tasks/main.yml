@@ -1,6 +1,5 @@
 ---
 
-
 - name: Silently block all undefined vhost access
   copy: src=default.block dest=/etc/nginx/sites-available/default.block owner=root group=root mode=0644
 
