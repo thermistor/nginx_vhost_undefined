@@ -1,12 +1,14 @@
 ---
 
-- name: Silently block all undefined vhost access
+- name: Disable the dist default vhost
+  file: path=/etc/nginx/sites-enabled/default state=absent
+
+- name: Install undefined vhost
   copy: src=default.block dest=/etc/nginx/sites-available/default.block owner=root group=root mode=0644
 
-- name: Enable the default blocking
+- name: Enable the undefined vhost
   file: path=/etc/nginx/sites-enabled/00_default.block
         src=/etc/nginx/sites-available/default.block
         state=link
   notify:
     - restart nginx
-
